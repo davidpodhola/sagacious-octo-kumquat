@@ -26,7 +26,7 @@ namespace ConsoleApplication2
         }
         class B : A
         {
-            public new void doit()
+            public void doit()
             {
                 Console.WriteLine("B");
             }
