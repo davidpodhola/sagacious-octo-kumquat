@@ -23,12 +23,14 @@ namespace PostSharpApplication1
         float sum;
         int count;
 
-        public void AddSample(float n)
+        [Reentrant]
+        public async Task AddSample(float n)
         {
             this.count++;
             this.sum += n;
         }
 
+        [Reentrant]
         public async Task<float> GetAverage()
         {
             return this.sum / this.count;
