@@ -5,5 +5,5 @@ open PostSharp.Patterns.Diagnostics
 [<EntryPoint>]
 [<Log>]
 let main argv =
-    printfn "%s" (argv.Length.ToString())
+    printfn "%A" argv.LongLength
     0 // return an integer exit code
