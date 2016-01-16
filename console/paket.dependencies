@@ -1,0 +1,4 @@
+source https://www.nuget.org/api/v2
+nuget FAKE
+nuget PostSharp 4.2.17
+nuget PostSharp.Patterns.Diagnostics 4.2.17
