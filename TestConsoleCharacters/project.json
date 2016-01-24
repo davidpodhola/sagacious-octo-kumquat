@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0-*",
+  "description": "TestConsoleCharacters Console Application",
+  "authors": [ "david.podhola" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "System.Text.Encoding": "4.0.11-rc2-23704"
+  },
+
+  "commands": {
+    "TestConsoleCharacters": "TestConsoleCharacters"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  }
+}
