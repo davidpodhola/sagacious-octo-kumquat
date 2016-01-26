@@ -8,7 +8,7 @@ namespace TestConsoleCharacters
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Test ()
         {
             char c = '┐';
             Console.WriteLine((int)c);
@@ -24,6 +24,28 @@ namespace TestConsoleCharacters
             Console.WriteLine("└─┘");
             string s = "╔";
             Console.WriteLine(s);
+            Console.WriteLine("------------------------------------");
+            // https://en.wikipedia.org/wiki/Box-drawing_character
+            Console.WriteLine("╠╡"); // Table 1
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("╨╫"); // Table 2
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("╚╬"); // Table 3
+            Console.ReadLine();
+        }
+
+        public static void Main(string[] args) {
+            Console.WriteLine(Console.Out.Encoding.ToString());
+            Console.WriteLine(Console.Out.Encoding.CodePage);
+            Console.WriteLine(Console.Out.Encoding.EncodingName);
+            Console.WriteLine(Console.Out.Encoding.WebName);
+            Console.WriteLine("------------------------------------");
+            for (char i = (char)33; i < 255; i++)
+            {
+                Console.Write((int)i + ":" + i + " ");
+                if (i % 10 == 0) Console.WriteLine();
+            }
+            Console.WriteLine("------------------------------------");
             Console.ReadLine();
         }
     }
