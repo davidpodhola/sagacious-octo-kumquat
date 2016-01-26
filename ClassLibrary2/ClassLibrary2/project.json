@@ -1,0 +1,27 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Test ClassLibrary2",
+  "authors": [ "davidpodhola" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+  },
+
+  "commands": {
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Runtime": "4.0.21-rc2-23704"
+      }
+    },
+    ".NETPortable,Version=v4.5,Profile=Profile111" : { }
+  }
+}
