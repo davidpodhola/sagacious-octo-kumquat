@@ -45,8 +45,13 @@ namespace TestConsoleCharacters
                 Console.Write((int)i + ":" + i + " ");
                 if (i % 10 == 0) Console.WriteLine();
             }
+
+            Console.SetCursorPosition(5, 5);
+            Console.Write("AAA");
             Console.WriteLine("------------------------------------");
             Console.ReadLine();
+            Test();
         }
     }
 }
+
