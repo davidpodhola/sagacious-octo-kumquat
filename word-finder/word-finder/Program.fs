@@ -37,4 +37,4 @@ module Program =
 open System.IO
 let dir = __SOURCE_DIRECTORY__
 let code = FunScript.Compiler.compileWithoutReturn <@ Program.main() @>
-File.WriteAllText(Path.Combine(dir, "../simplehttpserver.js"), code)
+File.WriteAllText(Path.Combine(dir, "../deploy/simplehttpserver.js"), code)
