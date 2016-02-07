@@ -76,6 +76,10 @@
       <HintPath>..\packages\FunScript.TypeScript.Binding.lib.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.lib.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FunScript.TypeScript.Binding.mustache">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.mustache.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.mustache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FunScript.TypeScript.Binding.node">
       <HintPath>..\packages\FunScript.TypeScript.Binding.node.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.node.dll</HintPath>
       <Private>True</Private>

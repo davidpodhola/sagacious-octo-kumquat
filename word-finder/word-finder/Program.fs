@@ -24,6 +24,7 @@ module Program =
         let port = 8124
 
         let app = express.Globals.express()
+        app.set("view engine", "mustache") |> ignore
 
         // Then, to use the module methods we need to open <module>.Globals
         http.Globals
