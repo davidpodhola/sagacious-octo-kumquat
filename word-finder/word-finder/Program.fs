@@ -17,17 +17,26 @@ module Program =
         static member require_http(): unit = failwith "never"
         [<FunScript.JSEmitInline("var express = require('express')")>]
         static member require_express(): unit = failwith "never"
+        [<FunScript.JSEmitInline("var bodyParser = require('body-parser')")>]
+        static member require_bodyParser(): unit = failwith "never"
     type Express with
         [<FunScript.JSEmitInline("express()")>]
         static member express(): Express = failwith "never"
+        [<FunScript.JSEmitInline("app.use('/public', express.static('public'))")>]
+        static member app_use_express_public(): unit = failwith "never"
+        [<FunScript.JSEmitInline("app.use(bodyParser())")>]
+        static member app_use_express_bodyParser(): unit = failwith "never"
 
     let main() =
         Node.require_http()
         Node.require_express()
+        Node.require_bodyParser()
         let port = 8124
 
         let app = Express.express()
         app.set("view engine", "mustache") |> ignore
+        Express.app_use_express_public()
+        Express.app_use_express_bodyParser()
 
         // Then, to use the module methods we need to open <module>.Globals
         http.Globals
