@@ -68,6 +68,10 @@
       <HintPath>..\packages\FunScript.1.1.94\lib\net40\FunScript.Interop.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FunScript.TypeScript.Binding.express">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.express.1.1.0.13\lib\net40\FunScript.TypeScript.Binding.express.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FunScript.TypeScript.Binding.lib">
       <HintPath>..\packages\FunScript.TypeScript.Binding.lib.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.lib.dll</HintPath>
       <Private>True</Private>
