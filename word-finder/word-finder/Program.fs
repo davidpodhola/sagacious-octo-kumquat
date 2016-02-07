@@ -17,13 +17,16 @@ module Program =
         static member require_http(): unit = failwith "never"
         [<FunScript.JSEmitInline("var express = require('express')")>]
         static member require_express(): unit = failwith "never"
+    type Express with
+        [<FunScript.JSEmitInline("express()")>]
+        static member express(): Express = failwith "never"
 
     let main() =
         Node.require_http()
         Node.require_express()
         let port = 8124
 
-        let app = express.Globals.express()
+        let app = Express.express()
         app.set("view engine", "mustache") |> ignore
 
         // Then, to use the module methods we need to open <module>.Globals
