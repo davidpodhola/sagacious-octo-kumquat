@@ -15,10 +15,15 @@ module Program =
     type Node with
         [<FunScript.JSEmitInline("var http = require('http')")>]
         static member require_http(): unit = failwith "never"
+        [<FunScript.JSEmitInline("var express = require('express')")>]
+        static member require_express(): unit = failwith "never"
 
     let main() =
         Node.require_http()
+        Node.require_express()
         let port = 8124
+
+        let app = express.Globals.express()
 
         // Then, to use the module methods we need to open <module>.Globals
         http.Globals
