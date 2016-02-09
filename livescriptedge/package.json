@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "edge": "^5.0.0"
+  },
+  "devDependencies": { "livescript": "1.4.0" }
+}
