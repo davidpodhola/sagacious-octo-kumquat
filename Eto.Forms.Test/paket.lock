@@ -2,3 +2,17 @@ NUGET
   remote: https://www.nuget.org/api/v2
   specs:
     FAKE (4.21.4)
+
+GROUP build
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    Eto.Forms (2.2.0)
+
+GROUP runtime
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    Eto.Forms (2.2.0)
+    Eto.Platform.Windows (2.2.0)
+      Eto.Forms (2.2.0)
