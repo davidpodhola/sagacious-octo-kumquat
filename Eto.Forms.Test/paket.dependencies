@@ -1,0 +1,13 @@
+source http://nuget.websharper.com/nuget
+source https://www.nuget.org/api/v2/
+nuget FAKE
+
+group build
+source https://www.nuget.org/api/v2
+
+nuget Eto.Forms
+
+group runtime
+source https://www.nuget.org/api/v2
+
+nuget Eto.Platform.Windows
